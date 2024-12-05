@@ -19,6 +19,12 @@ const nextConfig: NextConfig = {
       ],
     ],
   },
+  transpilePackages: [
+    // ref: https://github.com/ant-design/ant-design/pull/47990
+    "antd",
+    "rc-util",
+    "@ant-design",
+  ],
 };
 
 export default nextConfig;
